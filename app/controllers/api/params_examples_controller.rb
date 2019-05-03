@@ -5,4 +5,9 @@ class Api::ParamsExamplesController < ApplicationController
 
     render 'query_params.json.jbuilder'
   end
+
+  def segment_params
+    @message = params[:wildcard]
+    render 'segment_params.json.jbuilder'
+  end
 end
